@@ -134,7 +134,86 @@ const NotFoundPage = () => {
             ))}
           </motion.div>
 
-          {/* Back Home Button */}
+          {/* Implementation Status */}
+          <motion.div
+            className="bg-white rounded-lg p-8 max-w-4xl mx-auto mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+          >
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+              🚀 포트폴리오 구현 현황
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* 완성된 페이지 */}
+              <div>
+                <h3 className="text-lg font-bold text-green-600 mb-4 flex items-center">
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="w-3 h-3 bg-green-500 rounded-full mr-2"
+                  />
+                  완성된 페이지
+                </h3>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    메인 홈페이지 (전체 섹션)
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    변호사 상세페이지 × 3개
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    주요사례: 대기업 M&A 자문
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    404 에러페이지 (현재 페이지)
+                  </li>
+                </ul>
+              </div>
+
+              {/* 구현 가능한 페이지 */}
+              <div>
+                <h3 className="text-lg font-bold text-blue-600 mb-4 flex items-center">
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                    className="w-3 h-3 border-2 border-blue-500 border-t-transparent rounded-full mr-2"
+                  />
+                  구현 가능한 페이지
+                </h3>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center text-gray-600">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    나머지 5개 주요사례 상세페이지
+                  </li>
+                  <li className="flex items-center text-gray-600">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    법률 뉴스/블로그 섹션
+                  </li>
+                  <li className="flex items-center text-gray-600">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    온라인 상담 예약 시스템
+                  </li>
+                  <li className="flex items-center text-gray-600">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                    관리자 페이지 및 CMS
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <p className="text-sm text-blue-800 text-center">
+                💡 <strong>포트폴리오 목적</strong>으로 핵심 기능만 구현했습니다. 
+                실제 프로젝트에서는 모든 페이지와 기능을 완성하여 제공합니다.
+              </p>
+            </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
